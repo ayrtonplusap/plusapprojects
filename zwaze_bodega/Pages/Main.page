@@ -1,0 +1,103 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "DatePickerFechaDocTransporte",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Fecha del Documento de Transporte",
+							"IsEditable": true,
+							"Mode": "Date"
+						},
+						{
+							"validationProperties": {
+								"ValidationMessage": "Hola",
+								"ValidationMessageColor": "#f40000",
+								"ValidationViewIsHidden": true
+							},
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "SimplePropertyDocTransporte",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Documento de Transporte",
+							"KeyboardType": "Number",
+							"AlternateInput": "None",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "ButtonCleanFilters",
+							"IsVisible": true,
+							"Separator": false,
+							"Title": "Restablecer filtros",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://clear-filter",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/zwaze_bodega/Rules/TestingRule.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "ButtonSearch",
+							"IsVisible": true,
+							"Separator": false,
+							"Title": "Iniciar búsqueda",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://search",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/zwaze_bodega/Rules/GetDocumentoTransporteData.js"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MainView",
+	"Caption": "Bodega",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/zwaze_bodega/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

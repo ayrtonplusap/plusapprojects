@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/zwaze_bodega/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/zwaze_bodega/Rules/Application/AppUpdateSuccess.js"
+}

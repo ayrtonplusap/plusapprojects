@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "OnInitialize_Online_ZOD_SD_BODEGA_SRV"
+	},
+	"Service": "/zwaze_bodega/Services/Online_ZOD_SD_BODEGA_SRV.service"
+}

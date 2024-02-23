@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/zwaze_bodega/.build/zwaze_bodega/.build/uploadBundle.zip

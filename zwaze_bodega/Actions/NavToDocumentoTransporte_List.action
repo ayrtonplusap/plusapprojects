@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToDocumentoTransporte_List"
+	},
+	"PageToOpen": "/zwaze_bodega/Pages/DocumentoTransporte_List.page",
+	"ModalPage": false,
+	"NavigationType": "Inner"
+}

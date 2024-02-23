@@ -1,0 +1,43 @@
+{
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=dev_mobile&ClientId=3cecff08-3991-412b-8cff-b53a1a9348e1&ServerUrl=https://68e9cc25trial-dev-dev-mobile.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://68e9cc25trial-dev-dev-mobile.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://68e9cc25trial-dev-dev-mobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://68e9cc25trial-dev-dev-mobile.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://68e9cc25trial-dev-dev-mobile.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "b7a5e08f-da24-43c7-8c3a-44707e66c4c6",
+		"Space": "923c209a-3ecc-404d-a8bb-dc84f27d0d93",
+		"Deploy": {
+			"Destination": [
+				{
+					"CF": "dev_alcsa",
+					"MDK": "dev_alcsa",
+					"URL": ""
+				}
+			],
+			"Name": "ns.zwaze_bodega",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Auth": true,
+			"URL": "https://68e9cc25trial-dev-nszwaze-bodega-approuter.cfapps.us10-001.hana.ondemand.com/nszwaze_bodega"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/b7a5e08f-da24-43c7-8c3a-44707e66c4c6/space/923c209a-3ecc-404d-a8bb-dc84f27d0d93",
+		"AppId": "dev_mobile",
+		"Destination": [
+			"dev_alcsa"
+		]
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

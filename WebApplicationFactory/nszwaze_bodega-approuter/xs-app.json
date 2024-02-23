@@ -1,0 +1,12 @@
+{
+	"authenticationMethod": "route",
+	"routes": [
+		{
+			"csrfProtection": false,
+			"source": "^/dev_alcsa/(.*)$",
+			"target": "$1",
+			"destination": "dev_alcsa",
+			"authenticationType": "xsuaa"
+		}
+	]
+}

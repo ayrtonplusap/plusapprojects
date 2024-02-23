@@ -1,0 +1,6 @@
+{
+	"DestinationName": "dev_alcsa",
+	"PathSuffix": "/sap/opu/odata/sap/ZOD_SD_BODEGA_SRV",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile"
+}

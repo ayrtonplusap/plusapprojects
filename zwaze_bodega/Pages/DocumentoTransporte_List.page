@@ -1,0 +1,62 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": true,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectCollection",
+					"Target": "/zwaze_bodega/Rules/SetDocumentoTransporteList.js",
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"ObjectCell": {
+						"Title": "Doc. Transporte: {Title}",
+						"Subhead": "Peso: {Subhead}",
+						"Footnote": "Camión: {Footnote}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{Status}",
+						"SubstatusText": "{Substatus}",
+						"AccessoryType": "DisclosureIndicator",
+						"PreserveIconStackSpacing": false,
+						"OnPress": "/zwaze_bodega/Actions/NavToDocumentoTransporte_Detail.action",
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": false
+						}
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DocumentoTransporte_List",
+	"Caption": "Lista de Documentos",
+	"PrefersLargeCaption": true
+}
